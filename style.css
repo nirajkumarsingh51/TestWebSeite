@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+.main {
+    background: linear-gradient(to right, #d32f2f, #f57c00);
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px; /* Prevent overlap with navbar */
+}
+
+.content h1 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.content p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.address-input {
+    padding: 10px;
+    width: 300px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.order-btn {
+    padding: 10px 20px;
+    background-color: #5d5fef;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #4749e0;
+}
+
+.steps {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.steps h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.step-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Existing CSS above */
+
+.reviews-section {
+    background-color: #f7f7f7;
+    padding: 50px;
+    text-align: center;
+}
+
+.reviews-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.reviews-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.review {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.review p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.review span {
+    font-weight: bold;
+    color: #333;
+}
+
+.about-section {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    flex: 1;
+}
+
+.footer-left p, .footer-middle ul, .footer-right a {
+    margin: 5px 0;
+}
+
+.footer-middle ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-middle ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-right a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* Adjust Logo Size */
+.navbar .logo img {
+    width: 40px;  /* Set the desired width */
+    height: auto;  /* Adjust height to maintain aspect ratio */
+    max-height: 60px;  /* Optional: Limit the maximum height if needed */
+}
+
+/* Ensure navbar is fixed and styled well */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f7f7f7;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
+}
