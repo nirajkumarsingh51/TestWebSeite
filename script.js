@@ -39,3 +39,38 @@ document.querySelector('.contact-form').addEventListener('submit', function(even
         alert('Please fill out all fields before submitting.');
     }
 });
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+    burger.classList.toggle('toggle');
+});
+
+/////////////////////////
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form from being submitted immediately
+
+        // Perform form submission
+        var form = this;
+        var formData = new FormData(form);
+
+        fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(function(response) {
+            if (response.ok) {
+                alert('Thank you for your message!');  // Success message
+                form.reset();  // Clear all fields
+            } else {
+                alert('Oops! There was a problem submitting your form.');
+            }
+        }).catch(function(error) {
+            alert('Oops! There was a problem submitting your form.');
+        });
+    });
+</script>
